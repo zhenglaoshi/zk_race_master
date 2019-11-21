@@ -21,5 +21,7 @@ env:
   - ZOOKEEPER_PEERS=localhost:2181
 
 before_install:
-  - ./run_docker.sh
+  - docker-compose up -d
+
+after_script: npm run coverage
 
