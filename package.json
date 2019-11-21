@@ -31,7 +31,8 @@
   "homepage": "https://github.com/zhenglaoshi/zk_race_master#readme",
   "dependencies": {
     "ip": "^1.1.5",
-    "node-slogger": "^2.0.0"
+    "node-slogger": "^2.0.0",
+    "node-zookeeper-client": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
