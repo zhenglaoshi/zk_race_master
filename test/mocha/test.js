@@ -1,4 +1,4 @@
-const {expect} = requre('chai');
+const {expect} = require('chai');
 const {ZkRaceMaster} = require('../../index');
 
 const ZK_HOST = process.env.ZOOKEEPER_PEERS;
