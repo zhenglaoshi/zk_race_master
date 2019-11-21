@@ -1,23 +1,20 @@
 {
     "env": {
-        "browser": false,
         "mocha":true,
-        "commonjs": true,
         "es6": true,
         "node": true
     },
-    "parserOptions": {
-        "sourceType": "module"
-    },
+
+    "extends": "eslint:recommended",
     "rules": {
         "indent": [
             "error",
             4
         ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+        // "linebreak-style": [
+        //     "error",
+        //     "windows"
+        // ],
         "quotes": [
             "error",
             "single"
@@ -25,11 +22,7 @@
         "semi": [
             "error",
             "always"
-        ],
-        "valid-typeof": "warn",
-        "constructor-super": "warn",
-        "no-undef": "warn",
-        "no-const-assign": "warn",
-        "no-this-before-super": "warn",
+        ]
+		//"no-console": 0
     }
 }
