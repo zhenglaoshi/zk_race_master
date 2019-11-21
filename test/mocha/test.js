@@ -10,7 +10,7 @@ describe('test', function(){
             done();
         };
         new ZkRaceMaster({
-            zk_server_host: ZK_SERVER_HOST, 
+            zk_server_host: ZK_HOST, 
             session_timeout: 1000, 
             retries: 60, 
             server_path:'/',
