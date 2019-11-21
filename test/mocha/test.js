@@ -1,3 +1,4 @@
+const {expect} = requre('chai');
 const {ZkRaceMaster} = require('../../index');
 
 const ZK_HOST = process.env.ZOOKEEPER_PEERS;
@@ -5,11 +6,8 @@ const ZK_HOST = process.env.ZOOKEEPER_PEERS;
 describe('test', function(){
     it('race master', function(done){
         const task = function(is_master) {
-            if(is_master) {
-                done();
-            } else {
-                done('race master fail');
-            }
+            expect(is_master).to.be.equal(true);
+            done();
         };
         new ZkRaceMaster({
             zk_server_host: ZK_SERVER_HOST, 

@@ -1,1 +1,1 @@
-exports.ZkRaceMaster = require('./lib/race_master');
+exports.ZkRaceMaster = require('./lib/ZkRaceMaster');
