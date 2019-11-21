@@ -1,0 +1,1 @@
+exports.ZkRaceMaster = require('./lib/race_master');

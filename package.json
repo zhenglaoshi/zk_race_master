@@ -1,0 +1,39 @@
+{
+  "name": "zookeeper-race-master",
+  "version": "1.0.0",
+  "description": "zookeeper race master",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nyc mocha --recursive test/ --timeout 999999 --exit",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenglaoshi/zk_race_master.git"
+  },
+  "keywords": [
+    "zookeeper",
+    "race master",
+    "master slave"
+  ],
+  "author": "jiquan.zheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenglaoshi/zk_race_master/issues"
+  },
+  "homepage": "https://github.com/zhenglaoshi/zk_race_master#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "node-slogger": "^2.0.0",
+    "nyc": "^14.1.1",
+    "snyk": "^1.250.0"
+  }
+}
